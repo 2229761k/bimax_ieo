@@ -1,0 +1,25 @@
+
+#head{
+    height: 600px;
+    background-image: url("../bimax_ieo/image/backgroundgpa.png");
+    background-size:1600px;
+    }
+#about {
+height: 400px;
+background: white;
+}
+body{
+    background-color: grey;
+}
+.tokabox{
+    margin-top: 3%; margin-left:5%; width:40%; background: white; border-radius: 15px;
+    height: 530px;
+}
+.top_text{
+    margin-left:20%; margin-top: 3%; margin-bottom:3%;
+    color: white;
+    font-size: 50px
+}
+::-webkit-input-placeholder { text-align:right; }
+/* mozilla solution */
+input:-moz-placeholder { text-align:right; }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+{% extends "bimax_ieo/base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href='{% static "css/post_list.css" %}'>
+
+<div class="container">
+    <label>
+        <h1>간편구매 &nbsp;</h1>
+    </label>
+    <label>&nbsp;토큰 및 코인 거래</label>
+    <br><br>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">진행중</a></li>
+        <li><a data-toggle="tab" href="#menu1">전체</a></li>
+        <li><a data-toggle="tab" href="#menu2">진행예정</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <br>
+            <div class="container">
+                <div class="row">
+                    <a href="/gpa">
+                        <div class="col-xs-18 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'bimax_ieo/image/gpa_background.jpg' %}" />
+                                <div class="caption">
+                                    <h4>GPA 퍼블릭 세일</h4>
+                                    <p>Beyond the ICO: Game platform Accelerator And Blockchain incubator</p>
+                                    <p>시작일: 2018-01-09<br>
+                                        종료일: 2018-02-13</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="/toka">
+                        <div class="col-xs-18 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'bimax_ieo/image/toka_background.jpg' %}" />
+                                <div class="caption">
+                                    <h4>TOKA 퍼블릭 세일</h4>
+                                    <p>TOKENIZE ALL, TOKA The World's Most Amazing Tokenplatform</p>
+                                    <p>시작일: 2018-01-09<br>
+                                        종료일: 2018-02-13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="col-xs-18 col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="{% static 'bimax_ieo/image/usdm_background.jpg' %}" />
+                            <div class="caption">
+                                <h4>USDM 프라이빗세일</h4>
+                                <p>USDM은 BIMAX 및 GPA기반 플랫폼에서 사용되는 스테이블코인입니다.</p>
+                                <p>시작일: 2018-01-09<br>
+                                    종료일: 2018-02-13</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-18 col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="{% static 'bimax_ieo/image/btc_background.jpg' %}" />
+                            <div class="caption">
+                                <h4>BTC 메인 세일</h4>
+                                <p>비트코인 프라이빗세일을 진행합니다.</p>
+                                <p>시작일: 2018-01-09<br>
+                                    종료일: 2018-02-13</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-18 col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="{% static 'bimax_ieo/image/eth_background.jpg' %}" />
+                            <div class="caption">
+                                <h4>ETH 메인 세일</h4>
+                                <p>이더리움 프라이빗세일을 진행합니다.</p>
+                                <p>시작일: 2018-01-09<br>
+                                    종료일: 2018-02-13</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
+            </div>
+            <!--/container -->
+        </div>
+
+        <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
